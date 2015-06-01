@@ -4,7 +4,8 @@
 
 因为IOS是沙盒机制，也就是说ios中的应用是只可以访问自己应用目录下的文件，它没有android中得SD卡得概念，所以是不可以直接访问图像、视频等内容的。所以针对IOS自身应用产生的视频图像等都是放在自己的沙盒内的。
   
-默认情况下，每个沙盒含有3个文件夹：Documents,Library，tmp。其中Library包含Caches、Preferences目录。一个应用使用模拟器的这些文件的完整路径为：用户->资源库->Application Support->iPhone Simulator -> 6.1 ->Applications。
+默认情况下，每个沙盒含有3个文件夹：Documents,Library，tmp。其中Library包含Caches、Preferences目录。一个应用使用模拟器的这些文件的完整路径为：用户->资源库->Application Support->iPhone Simulator -> 6.1 ->Applications（具体可通过代码获取，如：/Users/benlinhuo/Library/Developer/CoreSimulator/Devices/1E83C4FA-A0F5-4C4F-A964-A8E9ACEFDD46/data/Containers/Data/Application/D1855082-D57C-4758-A11D-21A2AF30F957
+）。
 
 Documents：苹果建议将程序创建产生的文件以及应用浏览产生的文件数据保存在该目录下，iTunes备份和恢复的时候会包括此目录
 
